@@ -7,7 +7,8 @@
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier . --write"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "eslint": "^9.9.0",
     "globals": "^15.9.0",
     "parcel": "^2.12.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0"
   }

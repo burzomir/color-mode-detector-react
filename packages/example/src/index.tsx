@@ -6,5 +6,5 @@ const root = createRoot(container!);
 root.render(
   <div>
     <Hello>World</Hello>
-  </div>
+  </div>,
 );
