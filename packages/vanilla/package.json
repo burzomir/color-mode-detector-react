@@ -1,0 +1,19 @@
+{
+  "name": "@burzomir/color-mode-detector",
+  "version": "1.0.0",
+  "module": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "typescript": "^5.5.4"
+  }
+}
