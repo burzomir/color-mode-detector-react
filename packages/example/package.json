@@ -6,7 +6,8 @@
     "watch": "parcel index.html",
     "build": "parcel build index.html",
     "lint": "eslint",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "test": "echo"
   },
   "keywords": [],
   "author": "",
