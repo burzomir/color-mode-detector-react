@@ -132,7 +132,7 @@ describe("ColorModeDetector", () => {
       expect(subscriber1).toHaveBeenCalledTimes(1);
       expect(subscriber2).toHaveBeenCalledTimes(1);
     });
-    
+
     it("stops listening to the change event", () => {
       let callback = () => {};
       window.matchMedia = jest.fn().mockImplementation(() => ({
