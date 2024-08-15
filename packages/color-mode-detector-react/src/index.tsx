@@ -1,9 +1,15 @@
-import { hello } from "@burzomir/color-mode-detector";
+import { ColorMode, init } from "@burzomir/color-mode-detector";
+import { useState, useEffect } from "react";
 
-type HelloProps = {
-  children: string;
-};
-
-export default function Hello(props: HelloProps) {
-  return <h1>{hello(props.children)}</h1>;
+export function useColorModeDetector(defaultColorMode = ColorMode.Dark) {
+  const [colorMode, setColorMode] = useState(defaultColorMode);
+  useEffect(() => {
+    const detector = init(colorMode);
+    detector.subscribe(setColorMode);
+    return () => {
+      detector.unsubscribe(setColorMode);
+      detector.cleanup();
+    };
+  }, []);
+  return colorMode;
 }
