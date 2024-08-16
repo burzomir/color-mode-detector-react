@@ -1,13 +1,12 @@
 {
   "name": "@burzomir/color-mode-detector-react",
   "version": "1.0.0",
-  "main": "dist/main.js",
-  "module": "dist/index.js",
+  "browser": "dist/index.js",
   "source": "src/index.tsx",
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build",
+    "build": "rm -rf ./dist && parcel build",
     "lint": "eslint",
     "format": "prettier . --write",
     "test": "jest"
