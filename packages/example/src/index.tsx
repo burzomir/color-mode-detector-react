@@ -1,12 +1,12 @@
 import { ColorMode } from "@burzomir/color-mode-detector";
 import { useColorModeDetector } from "@burzomir/color-mode-detector-react";
 import { PropsWithChildren } from "react";
-import { createRoot } from "react-dom/client";
+import reactDom from "react-dom";
 import "./style.css";
 
 const container = document.getElementById("app");
-const root = createRoot(container!);
-root.render(<Test />);
+reactDom.render(<Test />, container!);
+// root.render(<Test />);
 
 function Test() {
   const colorMode = useColorModeDetector();

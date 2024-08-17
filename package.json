@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "prepare": "husky",
-    "build": "rm -rf ./.parcel-cache && npm run build --workspaces"
+    "build": "npm run cleanup:dist && npm run build --workspaces",
+    "cleanup:dist": "rm -rf .parcel-cache && rm -rf ./packages/*/dist",
+    "cleanup:node": "rm -rf node_modules && rm -rf ./packages/*/node_modules"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.12.0",
