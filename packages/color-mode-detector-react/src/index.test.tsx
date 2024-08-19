@@ -18,6 +18,7 @@ test("useColorModeDetector returns a proper color mode", async () => {
     addEventListener: jest.fn().mockImplementation((_, cb) => {
       callback = cb;
     }),
+    removeEventListener: jest.fn(),
   }));
   render(<TestComponent />);
   const span = await screen.findByTestId("test-component-id");
