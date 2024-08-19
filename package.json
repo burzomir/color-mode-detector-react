@@ -1,7 +1,8 @@
 {
   "name": "@burzomir/color-mode-detector-react",
   "version": "1.0.0",
-  "browser": "dist/index.js",
+  "main": "dist/main.js",
+  "browser": "dist/browser.js",
   "source": "src/index.tsx",
   "types": "dist/types.d.ts",
   "scripts": {
