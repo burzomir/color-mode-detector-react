@@ -1,18 +1,21 @@
 import { ColorMode, init } from "@burzomir/color-mode-detector";
-import { useEffect, useState } from "react";
+import { useDebugValue, useSyncExternalStore } from "react";
 
 export { ColorMode } from "@burzomir/color-mode-detector";
 
 export function useColorModeDetector(defaultColorMode = ColorMode.Dark) {
-  const [colorMode, setColorMode] = useState(defaultColorMode);
-  useEffect(() => {
-    const detector = init(colorMode);
-    detector.subscribe(setColorMode);
-    setColorMode(detector.currentColorMode);
-    return () => {
-      detector.unsubscribe(setColorMode);
-      detector.cleanup();
-    };
-  }, []);
+  useDebugValue("useColorModeDetector");
+  const detector = init(defaultColorMode);
+  const colorMode = useSyncExternalStore(
+    (callback) => {
+      detector.subscribe(callback);
+      return () => {
+        detector.unsubscribe(callback);
+        detector.cleanup();
+      };
+    },
+    () => detector.currentColorMode,
+    () => defaultColorMode,
+  );
   return colorMode;
 }

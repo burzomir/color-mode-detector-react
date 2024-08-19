@@ -2,6 +2,12 @@
 
 Welcome to **React Color Mode Detector Hook** – a simple and effective React wrapper around the core **Color Mode Detector** library. This hook provides a seamless way to integrate color mode detection and management into your React applications, enabling you to easily respond to light and dark mode changes.
 
+## Requirements
+
+`"react": "^18.0.0"`
+
+For `"react": ">= 16.8.0 < 18.0.0"` check `@burzomir/color-mode-detector-react@1.0.0`
+
 ## Installation
 
 Install the package via npm or yarn:
