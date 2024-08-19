@@ -4,5 +4,5 @@ export default {
   transform: {
     "^.+.tsx?$": ["ts-jest", {}],
   },
-  moduleNameMapper: { "@burzomir/(.*)": "<rootDir>/../$1/dist/main.js" },
+  moduleNameMapper: { "@burzomir/(.*)": "<rootDir>/../$1/dist/index.js" },
 };
