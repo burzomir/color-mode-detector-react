@@ -1,3 +1,4 @@
+import React from "react";
 import { ColorMode } from "@burzomir/color-mode-detector";
 import { useColorModeDetector } from "@burzomir/color-mode-detector-react";
 import { PropsWithChildren } from "react";
