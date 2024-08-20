@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@burzomir/color-mode-detector-react": "file:../burzomir-color-mode-detector-react-1.0.0.tgz",
+    "@burzomir/color-mode-detector-react": "file:../burzomir-color-mode-detector-react-2.0.0.tgz",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
