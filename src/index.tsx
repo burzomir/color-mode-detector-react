@@ -11,7 +11,6 @@ export function useColorModeDetector(defaultColorMode = ColorMode.Dark) {
     setColorMode(detector.currentColorMode);
     return () => {
       detector.unsubscribe(setColorMode);
-      detector.cleanup();
     };
   }, []);
   return colorMode;

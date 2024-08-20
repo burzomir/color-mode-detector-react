@@ -18,7 +18,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@burzomir/color-mode-detector": "^1.0.1"
+    "@burzomir/color-mode-detector": "^2.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 < 18.0.0",
