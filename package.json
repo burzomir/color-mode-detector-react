@@ -1,6 +1,6 @@
 {
   "name": "@burzomir/color-mode-detector-react",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "browser": "dist/browser.js",
@@ -13,10 +13,16 @@
     "format": "prettier . --write",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Michał Kłobukowski",
+  "license": "MIT",
+  "description": "A lightweight React library for detecting and managing color modes (light/dark) in web applications. Simple to use, with an intuitive API for subscribing to color mode changes and customizing user interfaces accordingly.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burzomir/color-mode-detector-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/burzomir/color-mode-detector-react/issues"
+  },
   "dependencies": {
     "@burzomir/color-mode-detector": "^2.0.0"
   },
@@ -24,6 +30,31 @@
     "@types/react": "^18.3.3",
     "react": "^18.3.1"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "keywords": [
+    "color-mode",
+    "color-scheme",
+    "dark-mode",
+    "light-mode",
+    "theme",
+    "color-theme",
+    "theme-detector",
+    "dark-theme",
+    "light-theme",
+    "color-mode-detection",
+    "color-scheme-detection",
+    "responsive-design",
+    "javascript",
+    "typescript",
+    "web-development",
+    "frontend",
+    "UI",
+    "user-preferences",
+    "custom-themes",
+    "css",
+    "web-apps",
+    "react"
+  ],
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@parcel/packager-ts": "^2.12.0",
