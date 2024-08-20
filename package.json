@@ -1,7 +1,9 @@
 {
   "name": "@burzomir/color-mode-detector-react",
   "version": "2.0.0",
-  "browser": "dist/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "browser": "dist/browser.js",
   "source": "src/index.tsx",
   "types": "dist/types.d.ts",
   "scripts": {
@@ -16,7 +18,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@burzomir/color-mode-detector": ">=1.0.0"
+    "@burzomir/color-mode-detector": "^1.0.1"
   },
   "peerDependencies": {
     "@types/react": "^18.3.3",
